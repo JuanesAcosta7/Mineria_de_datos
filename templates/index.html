@@ -2,44 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minería de Datos</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-custom">
-        <div class="container">
-            <span class="navbar-brand">Proyecto</span>
-        </div>
-    </nav>
+<div class="container section">
 
-    <div class="container mt-5">
-        <div class="card p-4">
-            <h2 class="mb-3">Minería de Datos</h2>
-            <p class="text-secondary-custom">La empresa SmartMarket cuenta con una base de datos amplia de clientes, pero actualmente no utiliza esta información de manera estratégica.</p>
-            
-            <h3>Problemáticas Identificadas</h3>
-             <p>La empresa no cuenta con una segmentación de clientes basada en datos, lo que limita la toma de decisiones estratégicas.</p>
-            <h4>Marketing Ineficiente</h4>
-            <p>Se envían promociones generales sin segmentación.</p>
-            <h4>Subutilización de Datos</h4>
-            <p>Variables como edad, ingresos y gasto no son aprovechadas.</p>
-            <h4>Pérdida de Oportunidades</h4>
-            <p>No se identifican:</p>
-            <ul>
-                <li>Clientes potenciales</li>
-                <li>Clientes de alto valor</li>
-                <li>Clientes inactivos</li>
-            </ul>
-            <h4>Mala Inversión de Recursos</h4>
-            <p>Se destinan esfuerzos a clientes poco rentables.</p>
-            <h4>Dataset</h4>
-            <p> el dataset empleado fue sacado del siguiente link <a href="https://www.kaggle.com/datasets/hosseinbadrnezhad/mall-customer-segmentation-dataset" target="_blank">https://www.kaggle.com/datasets/hosseinbadrnezhad/mall-customer-segmentation-dataset</a></p>
-        </div>
+    <div class="text-center mb-5">
+        <h1 class="title">Minería de Datos</h1>
+        <p class="subtitle">
+            Optimización de decisiones basada en análisis de datos
+        </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="card-custom bg-cyan mb-5">
+        <p>
+            La empresa <span class="highlight">SmartMarket</span> dispone de una gran cantidad de datos,
+            pero actualmente no los utiliza de forma estratégica para segmentar clientes
+            y mejorar su rendimiento comercial.
+        </p>
+    </div>
+
+
+    <h3 class="mb-4">Problemáticas Identificadas</h3>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card-custom bg-green">
+                <h5>Marketing ineficiente</h5>
+                <p>Se envían promociones generales sin segmentación de clientes.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-custom bg-gray">
+                <h5>Subutilización de datos</h5>
+                <p>No se aprovechan variables como edad, ingresos y comportamiento de compra.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-custom bg-green">
+                <h5>Pérdida de oportunidades</h5>
+                <ul>
+                    <li>Clientes potenciales</li>
+                    <li>Clientes de alto valor</li>
+                    <li>Clientes inactivos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-custom bg-gray">
+                <h5>Mala inversión de recursos</h5>
+                <p>Se destinan esfuerzos a segmentos poco rentables.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-custom bg-cyan mt-5">
+        <h5>Dataset</h5>
+        <p>
+            Fuente de datos:
+            <a href="https://www.kaggle.com/datasets/hosseinbadrnezhad/mall-customer-segmentation-dataset" target="_blank">
+                Kaggle
+            </a>
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
